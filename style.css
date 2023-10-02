@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(248, 187, 197);
+}
+.wrapper{
+    background-color: #f9f9f9;
+    width: 40%;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+.wrapper .box{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to left, #81E8F2, #F8BBC5);
+}
+.wrapper .row{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+.options h1{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.options .select-box{
+    border:1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.select-box select{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.1rem;
+}
+.colors input{
+    height: 50px;
+    padding: 0;
+    margin: 5px;
+}
+.colors input:last-child{
+    margin-left: 6px;
+}
+.wrapper textarea{
+    width: 100%;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+    resize: none;
+    border: 1px solid #ccc;
+    font-size: 1.05rem;
+}
+.buttons button{
+    padding: 15px 7px;
+    font-size: 1.09rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 28%;
+    margin: 0 0 -15px;
+}
+
+.buttons .new{
+    background-color: #977DFE;
+}
+.buttons .copy{
+    background-color: #fe7dcd;
+}
+.buttons .directionbtn{
+    background-color: aquamarine;
+}
+@media screen and (max-width:900px) {
+    .wrapper{
+        width: 75%;
+    }
+}
+@media screen and (max-width:500px) {
+        .wrapper{
+            width: 95%;
+        }
+        .buttons button{
+            width: 30%;
+        }
+}
+@media screen and (max-width:300px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttons button{
+        width: 90%;
+    }
+}

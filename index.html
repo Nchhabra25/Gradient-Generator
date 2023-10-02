@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4z9vxji0Xj8fLIsTIWBv57eQhMD1SCEg1s5-qSVzqg&s" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <title>Gradient Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+
+        </div>
+        <div class="row options">
+            <div class="column direction">
+                <h1>Direction</h1>
+                <div class="select-box">
+                    <select title="direction">
+                        <option value="to top">Top</option>
+                        <option value="to left" selected>Left</option>
+                        <option value="to right top">Right Top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right Bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left Bottom</option>
+                        <option value="to left top">Left Top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column colors">
+                <h1>Colors</h1>
+                <div class="inputs">
+                    <input type="color" value="#81E8F2"/>
+                    <input type="color" value="#F8BBC5"/>
+                </div>
+            </div>
+        </div>
+        <textarea class="row" disabled>background: linear-gradient(to left, #81E8F2, #F8BBC5)</textarea>
+        <div class="row buttons">
+            <button type="submit" class="new">Surprise Me</button>
+            <button type="submit" class="directionbtn">Radial</button>
+            <button type="submit" class="copy">Copy Code</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
